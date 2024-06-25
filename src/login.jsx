@@ -4,7 +4,7 @@ import google from "./google.png"
 import facebook from "./facebook.png"
 import { Link} from 'react-router-dom';
 import Main1 from './page1';
-
+import image1 from './l.jpg';
 import './style1.css';
 function login() {
     const [email, setEmail] = useState('');
@@ -20,12 +20,7 @@ function login() {
   return (
     <div className="container">
       <div className="box white-box">
-        <div className='headings'>
-            <br></br>
-          <div>
-          </div>
-        </div>
-
+        <p className='logintxt'>LOGIN</p>
         <div className='form'>
           <div className='emailinp'>
             <svg xmlns="http://www.w3.org/2000/svg" width={16} height={16} fill="currentColor" className="bi bi-envelope" viewBox="0 0 16 16">
@@ -60,6 +55,7 @@ function login() {
         </div>
       </div>
       <div className="box blue-box">
+        <img src={image1} className='imggg'></img>
       </div>
     </div>
   )
