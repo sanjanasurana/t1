@@ -147,7 +147,7 @@ function Flow() {
           setSuccess(true);
           setTimeout(() => {
             setSuccess(false);
-          }, 300000);
+          }, 3000);
         },);
       }
     };
