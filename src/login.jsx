@@ -11,7 +11,7 @@ function login() {
   const [password, setPassword] = useState('');
   const navigate = useNavigate();
   const handleLogin = () => {
-    if (email === 's' && password === '123') {
+    if (email === 'admin' && password === '123456') {
       navigate('/main');
     } else {
       alert('Invalid credentials');
