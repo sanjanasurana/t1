@@ -862,13 +862,12 @@ button, input, select, textarea {
 .blinking-text {
   position: absolute;
   top: -343px;
-  left: 1019px;
-    width: 100px;
-    height: 70px;
-    /* background-color: #C2FABC; */
+  left: 70%;
+    width: 119px;
+    height: 68px;
     z-index: 9998;
-    border: 6px dashed red;
-    animation: blink 1s linear infinite;
+  border: 6px dashed red;
+  animation: blink 1s linear infinite;
 }
 
 .success-rectangle h2 {
@@ -921,7 +920,7 @@ button, input, select, textarea {
 
 .tr1{
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
     margin-top: 7px;
     gap: 20px;
     width: 100%;
@@ -931,7 +930,7 @@ button, input, select, textarea {
   display: flex;
   gap: 10px;
   margin-top: 5px;
-  margin-left: 30px;
+  /* margin-left: 30px; */
   width: 100%;
   justify-content: center;
 }
