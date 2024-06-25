@@ -253,7 +253,7 @@ button, input, select, textarea {
     /* width: 97px; */
     display: flex;
     gap: 20px;
-    margin-left: 50px;
+    /* margin-left: 50px; */
 }
 
 .commontext4{
@@ -265,7 +265,7 @@ button, input, select, textarea {
     display: flex;
     margin-top: -13px;
     gap: 20px;
-    margin-left: 48px;
+    /* margin-left: 48px; */
 }
 
 .blackbox2{
