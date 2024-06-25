@@ -290,7 +290,7 @@ button, input, select, textarea {
 }
 
 .button2{
-  width: 120px;
+  /* width: 120px; */
   background-color: #e0e0e0;
     font-weight: bolder;
     background-color: #f7f7f7;
@@ -303,7 +303,7 @@ button, input, select, textarea {
 }
 
 .button3{
-  width: 120px;
+  /* width: 120px; */
   height: 35px;
   background-color: #e0e0e0;
     font-weight: bolder;
@@ -317,8 +317,9 @@ button, input, select, textarea {
 }
 
 .blackbox4 {
-  width: 150px; 
-  height: 50px;
+  /* width: 150px; 
+  height: 50px; */
+  padding: 9px 30px;
   background-color: black;
   border: 2px solid white; 
   color: yellow;
@@ -913,13 +914,17 @@ button, input, select, textarea {
 }
 
 .top5{
-  min-width: auto;
+  /* min-width: auto; */
+  width: 100%;
+  align-items: center;
 }
 
 .tr1{
   display: flex;
   justify-content: space-around;
     margin-top: 7px;
+    gap: 20px;
+    width: 100%;
 }
 
 .tr2{
@@ -927,4 +932,6 @@ button, input, select, textarea {
   gap: 10px;
   margin-top: 5px;
   margin-left: 30px;
+  width: 100%;
+  justify-content: center;
 }
