@@ -862,7 +862,8 @@ button, input, select, textarea {
 .blinking-text {
   position: absolute;
   top: -343px;
-  left: 68%;
+  left: 69%;
+  /* right: 270px; */
     width: 119px;
     height: 68px;
     z-index: 9998;
