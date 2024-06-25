@@ -1,0 +1,9 @@
+.node-link {
+    color: black;
+    text-decoration: none;
+  }
+  
+  .node-link:hover {
+    text-decoration: none;
+    color: black;
+  }
