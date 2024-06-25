@@ -147,7 +147,7 @@ function Flow() {
           setSuccess(true);
           setTimeout(() => {
             setSuccess(false);
-          }, 3000);
+          }, 300000);
         },);
       }
     };
@@ -215,6 +215,14 @@ function Flow() {
       <div className='greybox'>
               <div className='greyboxtext'>UNIT 1 OVERVIEW</div>
             </div>
+            {loading && (
+        <div className="loading-pane">
+          <div className='loadingpane2'>
+                <p className='loadingtext'>The given valve is not functioning as expected</p>
+            <button onClick={handleCloseLoadingPane} className='xbutton'>x</button>
+          </div>
+        </div>
+      )}
       <ReactFlow
         nodes={initialNodes}
         edges={initialEdges}
@@ -229,14 +237,14 @@ function Flow() {
         zoomOnScroll={false}
         onNodeClick={handleNodeClick}
       />
-      {loading && (
+      {/* {loading && (
         <div className="loading-pane">
           <div className='loadingpane2'>
                 <p className='loadingtext'>The given valve is not functioning as expected</p>
             <button onClick={handleCloseLoadingPane} className='xbutton'>x</button>
           </div>
         </div>
-      )}
+      )} */}
       {/* {success && (
         <div className="blinking-text">
         </div>
