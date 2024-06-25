@@ -231,7 +231,7 @@ button, input, select, textarea {
 .text3{
   text-align: center;
   /* margin-top: 8px; */
-  margin-left: 95px;
+  /* margin-left: 95px; */
   font-size: 30px;
   font-weight: bold;
   /* text-shadow: 1px 1px 2px white; */
@@ -241,7 +241,7 @@ button, input, select, textarea {
   text-align: center;
   font-size: 15px;
   font-weight: bolder;
-  margin-left: 90px;
+  /* margin-left: 90px; */
   margin-top: -16px;
 }
 
@@ -832,7 +832,7 @@ button, input, select, textarea {
 
     position: absolute;
     top: 0;
-    right: 80%;
+    right: auto;
     /* left: -80%; */
 /*     width: 300px; */
     width: 320px;
@@ -861,7 +861,7 @@ button, input, select, textarea {
 .blinking-text {
   position: absolute;
   top: -343px;
-  left: 1100px;
+  left: 1019px;
     width: 100px;
     height: 70px;
     /* background-color: #C2FABC; */
@@ -897,23 +897,23 @@ button, input, select, textarea {
 }
 
 .top1{
-  width: 287px;
+  min-width: 270px;
 }
 
 .top2{
-  width: 216px;
+  min-width: 201px;
 }
 
 .top3{
-  width:288px;
+  min-width:270px;
 }
 
 .top4{
-  width: 216px;
+  min-width: 200px;
 }
 
 .top5{
-  width: auto;
+  min-width: auto;
 }
 
 .tr1{
