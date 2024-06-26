@@ -153,12 +153,12 @@ function Flow() {
           if (nodeElement) {
             nodeElement.classList.add('border11');
           }
-          setTimeout(() => {
-            setSuccess(false);
-                if (nodeElement) {
-              nodeElement.classList.remove('border11');
-            }
-          }, 3000);
+          // setTimeout(() => {
+          //   setSuccess(false);
+          //       if (nodeElement) {
+          //     nodeElement.classList.remove('border11');
+          //   }
+          // },);
         },);
       }
     };
@@ -177,6 +177,9 @@ function Flow() {
 
   const handleCloseLoadingPane = () => {
     setLoading(false);
+    setSuccess(false);
+    const nodeElement = document.querySelector('.fillertext3');
+    nodeElement.classList.remove('border11');
   };
 
   return (

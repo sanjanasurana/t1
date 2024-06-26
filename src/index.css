@@ -721,7 +721,7 @@ button, input, select, textarea {
 .fillertext3{
   position: relative;
     color: black;
-    border: 1px solid transparent;
+    border: 2px solid transparent;
     text-align: center;
     font-weight: bold;
     left: -96px;
@@ -738,7 +738,7 @@ button, input, select, textarea {
     text-align: center;
     font-weight: bold;
     left: -81px;
-    top: 51px;
+    top: 45px;
     width: 40px;
     font-size: 8px;
     text-align: center;
@@ -750,7 +750,7 @@ button, input, select, textarea {
     text-align: center;
     font-weight: bold;
     left: -80px;
-    top: 82px;
+    top: 75px;
     width: 40px;
     font-size: 8px;
     text-align: center;
@@ -940,7 +940,8 @@ button, input, select, textarea {
 }
 
 .border11{
-  border: 1px dashed red;
+  border: 2px dashed red;
+  scale: 1.2;
   /* animation: blink 1s linear infinite; */
 
 }
