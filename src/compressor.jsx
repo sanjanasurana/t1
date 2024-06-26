@@ -1,7 +1,11 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useEffect, useCallback, Children } from 'react';
 import ReactFlow, { applyNodeChanges } from 'reactflow';
-import { Background, MarkerType,useNodesState,useEdgesState,addEdge,Controls, Handle, Position, NodeToolbar} from 'reactflow';
-
+import { Background, MarkerType,addEdge,Controls, Handle, Position, NodeToolbar} from 'reactflow';
+import {
+  useNodesState,
+  useEdgesState,
+  ReactFlowProvider,
+} from 'reactflow';
 import 'reactflow/dist/style.css';
 import TextUpdaterNode from './TextUpdaterNode';
 import TextUpdaterNode1 from './TextUpdaterNode1';
@@ -141,16 +145,24 @@ function Flow() {
 
     const handleNodeClick = (event, node) => {
       if (node.id === '32') {
-        setLoading(true);
+        setLoading(true); 
         setTimeout(() => {
-          // setLoading(false);
           setSuccess(true);
+              const nodeElement = document.querySelector('.fillertext3');
+              console.log(nodeElement);
+          if (nodeElement) {
+            nodeElement.classList.add('border11');
+          }
           setTimeout(() => {
             setSuccess(false);
+                if (nodeElement) {
+              nodeElement.classList.remove('border11');
+            }
           }, 3000);
         },);
       }
     };
+    
   useEffect(() => {
     const timerID = setInterval(() => {
       setCurrentTime(new Date());
@@ -250,10 +262,10 @@ function Flow() {
         </div>
       )} */}
       <div className="navbarbottom">
-      {success && (
+      {/* {success && (
         <div className="blinking-text">
         </div>
-      )}
+      )} */}
           <div className="block1">
             <div className="block1title"><b>GENERAL DATA</b></div>
             <br></br>
