@@ -141,11 +141,15 @@ function Flow() {
   const [currentTime, setCurrentTime] = useState(new Date());
   const [currentDate, setCurrentDate] = useState('');
   const [loading, setLoading] = useState(false);
+  const [loadingbar, setLoadingbar] = useState(false);
     const [success, setSuccess] = useState(false);
 
     const handleNodeClick = (event, node) => {
       if (node.id === '32') {
-        setLoading(true); 
+        setLoadingbar(true);
+        setTimeout(() => {
+          setLoadingbar(false);
+          setLoading(true); 
         setTimeout(() => {
           setSuccess(true);
               const nodeElement = document.querySelector('.fillertext3');
@@ -153,13 +157,8 @@ function Flow() {
           if (nodeElement) {
             nodeElement.classList.add('border11');
           }
-          // setTimeout(() => {
-          //   setSuccess(false);
-          //       if (nodeElement) {
-          //     nodeElement.classList.remove('border11');
-          //   }
-          // },);
         },);
+        },3000);
       }
     };
     
@@ -252,6 +251,11 @@ function Flow() {
         zoomOnScroll={false}
         onNodeClick={handleNodeClick}
       />
+      {loadingbar && (
+                    <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', backgroundColor: 'rgba(255, 255, 255, 0.8)', padding: '20px', borderRadius: '5px' }}>
+                        <h2>Analyzing....</h2>
+                    </div>
+                )}
       {/* {loading && (
         <div className="loading-pane">
           <div className='loadingpane2'>

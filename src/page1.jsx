@@ -5,7 +5,7 @@ import './s1.css';
 import { Link } from 'react-router-dom';
 export const nodes = [
   // { id: '26', position: { x: 5, y: 0 }, data: { label: '' } ,targetPosition: 'left',sourcePosition: 'left', style: {border:'2px solid #000000',height:'680px',width:'1420px'}},
-    { id: '1', position: { x: 240, y: 50 }, data: { label: <Link to='/compressor'>Compressors</Link> },targetPosition: 'bottom',sourcePosition: 'right', style: {border:'2px solid #00a900'}},
+    { id: '1', position: { x: 240, y: 50 }, data: { label: <Link to='/compressor'>Compressor</Link> },targetPosition: 'bottom',sourcePosition: 'right', style: {border:'2px solid #00a900'}},
     { id: '2', position: { x: 850, y: 50 }, data: { label: 'To EXPORT' } ,targetPosition: 'left', style: {border:'2px solid #00a900'}},
     { id: '3', position: { x: 240, y: 160 },data: { label: <Link to='/hpseparator'>HP Separator</Link>},targetPosition: 'left',sourcePosition: 'top', style: {border:'2px solid #000000'}},
     { id: '4', position: { x: 240, y: 215 }, data: { label: 'HP Test Separator' },targetPosition: 'left', style: {border:'2px solid #000000'}},
